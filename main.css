@@ -55,9 +55,10 @@ a{
 .nome, .cargo, .titulo{
     text-align: center;
     margin: 0;
+    max-width: 80%; 
 }
 .nome{
-    font-size: 40px;   
+    font-size: 40px;
 }
 .cargo{
     font-size: 20px;
