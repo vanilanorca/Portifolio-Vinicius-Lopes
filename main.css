@@ -122,9 +122,8 @@ a{
     width: 100%;
 
     max-width: 250px;
-    margin-left: calc(50% - 125px);
 }
-.projetos .box p a:nth-child(2){
+.projetos .box p{
     font-family: Arial, Helvetica, sans-serif;
     background: rgba(0, 0, 0, 0.315);
     padding: 10px 15px;
@@ -132,7 +131,7 @@ a{
 
     transition: .5s;
 }
-.projetos .box p a:nth-child(2):hover{
+.projetos .box p:hover{
     background: #EBFF00;
     border: 5px solid black;
     color: black;
