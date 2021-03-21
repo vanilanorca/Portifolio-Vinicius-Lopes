@@ -6,6 +6,23 @@ function load (){
 window.onload = (function () {
     window.setInterval('load()',2000);})
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 // function browserVerify() {
 
 //     if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
