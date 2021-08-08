@@ -31,6 +31,7 @@ a{
 }
 
 #conteudo{
+    width: 100vw;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.404)), url(images/bg.png) ;
     background-repeat: repeat;
 }
@@ -81,20 +82,22 @@ a{
     text-align: center;
 }
 .projetos .bg{
-    transition: .5s;
+    transition: .1s;
     background: black;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 300px;
 
     border: 1px solid #EBFF00;
 }
 .projetos .box{
+    width: 100%;
+    max-width: 400px;
 
-    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,10 +105,9 @@ a{
 
     border-radius: 20px;
     padding: 15px;
-    transition: all .5s;
+    transition: all .1s;
 
     margin-bottom: 150px;
-
 }
 .projetos .box:hover{
     transform: scale(1.02);
@@ -115,8 +117,8 @@ a{
 .projetos h2{
     text-align: center;
     color: white;
-    width: 100%;
 
+    width: 100%;
     max-width: 250px;
 }
 .projetos .box p{
@@ -125,7 +127,7 @@ a{
     padding: 10px 15px;
     border-radius: 5px;
 
-    transition: .5s;
+    transition: .1s;
 }
 .projetos .box p:hover{
     background: #EBFF00;
@@ -155,12 +157,28 @@ a{
 footer{
     display: flex;
     justify-content: center;
-    align-items: center;
     letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    padding: 8px;
+    height: 80px;
     background: rgba(0, 0, 0, 0.637);
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+}
+
+.icon-whatsapp{
+    color: white;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 @media(max-width: 600px){
@@ -168,6 +186,30 @@ footer{
         max-width: 60%;
         border-radius: 50%;
         border: 2px dotted white;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer div{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .icon-whatsapp{
+        color: white;
+        width: 30px;
+        background: white;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+
+    .projetos .box{
+        padding: 0!important;
+        padding: 0;
     }
 }
 
