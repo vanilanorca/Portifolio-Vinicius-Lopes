@@ -136,6 +136,9 @@ a{
 }
 
 /*Tamanho de corte -> 1920 x 2012*/
+.projetos .box .mydailyhoroscope{
+    background-image: url(images/projetos/mydailyhoroscope.webp);
+}
 .projetos .box .rufus{
     background-image: url(images/projetos/rufus.png);
 }
