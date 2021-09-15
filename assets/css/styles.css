@@ -100,6 +100,10 @@ body.dark-theme{
     max-width: 60%;
 }
 
+/*======== CURSOR ========*/
+body{
+    cursor: url('/assets/img/cursor/normal-cursor.png'),auto;
+}
 
 
 /*========== Button Dark/Light ==========*/
