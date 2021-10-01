@@ -708,11 +708,14 @@ img{
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
-    overflow: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .portfolio__content{
     padding: 0 1.5rem;
+
 }
 
 .portfolio__img{
@@ -737,6 +740,11 @@ img{
 .swiper-button-prev::after,
 .swiper-button-next::after{
     content:'';
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
 .swiper-portfolio-icon{

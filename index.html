@@ -17,14 +17,15 @@
     </head>
     <body>
         <!--==================== LOADING ANIMATION ====================-->
-        <div id="loading" style="display:inline">
+        <!-- <div id="loading" style="display:inline">
             <div>
                 <img loading="lazy" src="assets/img/giphy.gif" alt="">
             </div>
-        </div>
+        </div> -->
 
         <!--==================== CONTENT ====================-->
-        <div id="conteudo" style="display: none">
+        <!-- <div id="conteudo" style="display: none"> -->
+            <div id="conteudo">
             <!--==================== HEADER ====================-->
             <header class="header" id="header">
                 <nav class="nav container">
@@ -43,22 +44,22 @@
                                     <i class="uil uil-user nav__icon"></i> Sobre
                                 </a>
                             </li>
+
+                            <li class="nav__item">
+                                <a href="#portfolio" class="nav__link">
+                                    <i class="uil uil-scenery nav__icon"></i> Portifólio
+                                </a>
+                            </li>
             
                             <li class="nav__item">
                                 <a href="#skills" class="nav__link">
                                     <i class="uil uil-file-alt nav__icon"></i> Skills
                                 </a>
-                            </li>
+                            </li>                            
             
                             <li class="nav__item">
                                 <a href="#services" class="nav__link">
                                     <i class="uil uil-briefcase-alt nav__icon"></i> Serviços
-                                </a>
-                            </li>
-            
-                            <li class="nav__item">
-                                <a href="#portfolio" class="nav__link">
-                                    <i class="uil uil-scenery nav__icon"></i> Portfólio
                                 </a>
                             </li>
             
@@ -188,115 +189,108 @@
                     <h2 class="section__title">Portifólio</h2>
                     <span class="section__subtitle">Trabalhos e projetos</span>
             
-                    <div class="portfolio__container container swiper-container">
-                        <div class="swiper-wrapper">
-                            <!--==================== PORTFOLIO 1 ====================-->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
-            
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">My Daily Horoscope App</h3>
-                                    <p class="portfolio__description">Play Store App</p>
-                                    <a target="_blank"
-                                        href="https://play.google.com/store/apps/details?id=com.yourcompany.mydailyhoroscope"
-                                        class="button button--flex button--small portfolio__button">
-                                        Acessar
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
+                    <div class="portfolio__container container">
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">My Daily Horoscope App</h3>
+                                <p class="portfolio__description">Play Store App</p>
+                                <a target="_blank"
+                                    href="https://play.google.com/store/apps/details?id=com.yourcompany.mydailyhoroscope"
+                                    class="button button--flex button--small portfolio__button">
+                                    Acessar
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
                             </div>
-            
-                            <!--==================== PORTFOLIO 2 ====================-->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
-            
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">Site do Estúdio Rufus Ink</h3>
-                                    <p class="portfolio__description">Site desenvolvido para apresentar o estúdio Rufus Ink e o
-                                        portifólio dos tatuadores</p>
-                                    <a target="_blank" href="https://rufusink.netlify.app/"
-                                        class="button button--flex button--small portfolio__button">
-                                        Acessar
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-            
-                            <!--==================== PORTFOLIO 3 ====================-->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
-            
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">iBurger</h3>
-                                    <p class="portfolio__description">Site desenvolvido para um projeto de faculdade</p>
-                                    <a target="_blank" href="https://iburger.netlify.app/"
-                                        class="button button--flex button--small portfolio__button">
-                                        Acessar
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-            
-                            <!--==================== PORTFOLIO 4 ====================-->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/portfolio4.png" alt="" class="portfolio__img">
-            
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">Landing Page de Portifólio</h3>
-                                    <p class="portfolio__description">Landing Page para portifólio pessoal</p>
-                                    <a target="_blank" href="https://gabriela-curtolo.netlify.app/"
-                                        class="button button--flex button--small portfolio__button">
-                                        Acessar
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-            
-                            <!--==================== PORTFOLIO 5 ====================-->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/portfolio5.png" alt="" class="portfolio__img">
-            
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">Landing Page Profissional</h3>
-                                    <p class="portfolio__description">Landing Page para informações profissionais</p>
-                                    <a target="_blank" href="https://renata-de-lucca.netlify.app/"
-                                        class="button button--flex button--small portfolio__button">
-                                        Acessar
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-            
-                            <!--==================== PORTFOLIO 6 ====================-->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/portfolio6.png" alt="" class="portfolio__img">
-            
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">Landing Page Profissional</h3>
-                                    <p class="portfolio__description">Landing Page para informações profissionais</p>
-                                    <a target="_blank" href="https://gabrielly-cabral.netlify.app/"
-                                        class="button button--flex button--small portfolio__button">
-                                        Acessar
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-            
                         </div>
-            
-                        <!--==================== SWIPER-ARROWS ====================-->
-                        <div class="swiper-button-next">
-                            <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+        
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
+        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Site do Estúdio Rufus Ink</h3>
+                                <p class="portfolio__description">Site desenvolvido para apresentar o estúdio Rufus Ink e o
+                                    portifólio dos tatuadores</p>
+                                <a target="_blank" href="https://rufusink.netlify.app/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Acessar
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="swiper-button-prev">
-                            <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+        
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
+        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">iBurger</h3>
+                                <p class="portfolio__description">Site desenvolvido para um projeto de faculdade</p>
+                                <a target="_blank" href="https://iburger.netlify.app/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Acessar
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
                         </div>
-            
-                        <!--==================== ADD PAGINATION ====================-->
-                        <div class="swiper-pagination"></div>
+        
+                        <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio4.png" alt="" class="portfolio__img">
+        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Landing Page de Portifólio</h3>
+                                <p class="portfolio__description">Landing Page para portifólio pessoal</p>
+                                <a target="_blank" href="https://gabriela-curtolo.netlify.app/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Acessar
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!--==================== PORTFOLIO 5 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio5.png" alt="" class="portfolio__img">
+        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Landing Page Profissional</h3>
+                                <p class="portfolio__description">Landing Page para informações profissionais</p>
+                                <a target="_blank" href="https://renata-de-lucca.netlify.app/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Acessar
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!--==================== PORTFOLIO 6 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio6.png" alt="" class="portfolio__img">
+        
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Landing Page Profissional</h3>
+                                <p class="portfolio__description">Landing Page para informações profissionais</p>
+                                <a target="_blank" href="https://gabrielly-cabral.netlify.app/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Acessar
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
-            
+
+
+
+
+
+
+
+
                 <!--==================== SKILLS ====================-->
                 <section class="skills section" id="skills">
                     <h2 class="section__title">Skills</h2>
@@ -820,12 +814,10 @@
                 <i class="uil uil-arrow-up scrollup__icon"></i>
             </a>
         </div>
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
+
     </body>
 </html>
