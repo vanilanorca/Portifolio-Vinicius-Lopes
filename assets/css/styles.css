@@ -707,6 +707,96 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+/* CAROUSEL */
+        .slideshow-container {
+        width: 80%;
+        max-width: 1100px;
+        position: relative;
+        margin: auto;
+        }
+
+        .mySlides {
+        display: none;
+        }
+
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 50%;
+        user-select: none;
+        background: var(--first-color);
+        }
+
+        .prev {
+        left: -65px;
+        padding-right: 4px;
+        }
+        .next {
+        right: -65px;
+        }
+
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #006665;
+        }
+
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        /* CAROUSEL ITEM */
+        .carrossel-item{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
 .portfolio__container{
     display: flex;
     flex-direction: column;
@@ -715,7 +805,27 @@ img{
 
 .portfolio__content{
     padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.portfolio__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px){
+    .portfolio__content{
+        flex-direction: row;
+    }
+
+    .portfolio__data{
+        align-items: flex-start;
+    }
 }
 
 .portfolio__img{
