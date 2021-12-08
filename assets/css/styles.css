@@ -847,13 +847,6 @@ img{
     transform: translateX(.25rem);
 }
 
-.portifolio-separator{
-    width: 80%;
-    margin: 0 auto;
-    height: 1px;
-    background: var(--first-color);
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after{
     content:'';
