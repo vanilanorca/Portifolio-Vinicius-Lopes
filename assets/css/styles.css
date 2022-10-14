@@ -479,6 +479,7 @@ img{
 .skills__icon,
 .skills__arrow{
     font-size: 2rem;
+    margin-left: 15px;
     color: var(--first-color);
 }
 
