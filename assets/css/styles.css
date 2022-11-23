@@ -759,7 +759,7 @@ img{
         top: 0;
         }
 
-        .dot {
+        .dot, .dot2 {
         cursor: pointer;
         height: 15px;
         width: 15px;
@@ -770,7 +770,7 @@ img{
         transition: background-color 0.6s ease;
         }
 
-        .active, .dot:hover {
+        .active, .dot:hover, .dot2:hover {
         background-color: #5A43CB;
         }
 
@@ -812,6 +812,22 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+.portfolio__content2{
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio__content2 .portfolio__data{
+    margin-top: 20px;
+    margin-bottom: -40px;
+    display: flex;
+    align-items: center;
+}
+
+
 
 .portfolio__data{
     display: flex;
